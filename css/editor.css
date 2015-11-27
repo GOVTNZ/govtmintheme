@@ -620,7 +620,7 @@ blockquote h3 {
   /* line 4, ../scss/_header.scss */
   .navbar.navbar-inverse {
     background-color: #0D0D0D;
-    border-color: #0D0D0D;
+    border: none;
     background-image: none;
   }
 

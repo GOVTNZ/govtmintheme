@@ -1,0 +1,46 @@
+@media (max-width: 1366px) {
+	.feature-image {
+		height: 180px;
+	}
+	h1.feature-text {
+		width: 50%;
+		font-size: 1.6em;
+	}
+}
+
+@media (min-width: 1367px) {
+	.feature-image {
+		height: 250px;
+	}
+}
+
+@media (min-width: 1199px) and (max-width: 1368px) {
+	h1.feature-text {
+		width: 40%;
+	}
+}
+
+@media(min-width: 768px) {
+  .feature-image.home {
+    background: url('../images/demo-feature-image.jpg') no-repeat;
+    background-position: center;
+  }
+}
+@media(max-width: 767px) {
+	.feature-image {
+		height: 210px;
+      background: none;
+	}
+}
+
+.feature-image {
+	width: 100%;
+    height: auto;
+
+	> * {
+		color: $white;
+	}
+  .feature-text {
+    margin-bottom: 36px;
+  }
+}

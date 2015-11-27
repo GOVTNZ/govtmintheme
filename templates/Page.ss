@@ -21,7 +21,7 @@
 		$Layout
 	</div>
 
-	<% include Footer %>
+	<% include FooterStatic %>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
 .navbar {
 	margin-bottom: 0;
-  border-radius: 0;
+    border-radius: 0;
 	&.navbar-inverse {
 		background-color: $jetblack;
-		border-color: $jetblack;
+		border: none;
 		background-image: none;
 	}
 }
