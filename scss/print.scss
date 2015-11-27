@@ -1,0 +1,197 @@
+@media print {
+	html {
+		margin: 15px;
+	}
+	.navbar {
+		background-color: #fff;
+		border: none;
+		display: block !important;
+		height: auto;
+		.container {
+			.headerItem {
+				border-bottom: 1px solid #000000;
+				padding-bottom: 36px;
+				margin-bottom: 36px;
+				.logo, .mobile-search, .search {
+					display: none;
+				}
+				.print-logo {
+					display: block !important;
+				}
+			}
+			.header-search {
+				display: none;
+			}
+		}
+	}
+	.banner-link {
+		display: none;
+	}
+	body {
+		font-size: 0.7em;
+		p, li {
+			font-size: 12pt;
+		}
+		a {
+			color: black!important;
+			word-wrap: break-word;
+			&:visited {
+				color: black!important;
+			}
+			&.external:visited {
+				color: black!important;
+			}
+		}
+		h1 {
+			font-size: 36px;
+			&.feature-text {
+				margin-top: 0!important;
+				padding-top: 0!important;
+			}
+		}
+		table {
+			thead {
+				background-color: #ebebeb!important;
+			}
+			tbody {
+				tr {
+					border-top: 1px solid #ababab;
+				}
+			}
+			td, th {
+				padding: 12px;
+			}
+		}
+		.noscript {
+			display: none;
+		}
+		.related-links {
+			display: none;
+		}
+
+		.mobile-book-nav {
+			display: none;
+		}
+		.summary {
+			h2 {
+				font-size: 16pt;
+			}
+		}
+		h3 {
+			font-size: 12pt;
+		}
+		h4 {
+			font-size: 12pt;
+			font-style: italic;
+		}
+		.page-content, .content {
+			a.internal-link:after {
+				content: " (https://www.govt.nz" attr(href) ")"!important;
+			}
+			a.internal-link-slash:after {
+				content: " (https://www.govt.nz/" attr(href) ")"!important;
+			}
+				a span.fa-stack, button.image-hover-prompt {
+					display: none;
+				}
+			.title-row {
+				h2 {
+					margin-top: 0;
+				}
+			}
+			.multi-page-nav {
+				display: none;
+			}
+			.social {
+				display: none;
+			}
+			.promos {
+				div.col-md-6 {
+					max-width: 49%;
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+			.page-description {
+				margin-bottom: 12px;
+			}
+
+		}
+		.book-lower-nav {
+			.nav-wrapper {
+				display: none;
+			}
+		}
+		.tota11y.tota11y-toolbar {
+			display: none;
+		}
+	}
+	.footer {
+		display: block;
+		font-size: 0.7em;
+		padding-top: 40px;
+		.col-md-4, img {
+			display: none;
+		}
+		.footer-icons {
+			img.print {
+				display: block!important;
+				visibility: visible!important;
+			}
+			a:after {
+				content: '';
+			}
+		}
+		.copyright-icons {
+			display: none;
+		}
+	}
+
+	/* Form */
+	form {
+		textarea, input, select {
+			width: 100%;
+			margin-bottom: 18px;
+		}
+		input.action {
+			width: initial;
+		}
+		.field {
+			span {
+				font-weight: 500;
+			}
+		}
+	}
+
+	/* Search */
+	.search-page {
+		.search-form, .pagination {
+			display: none;
+		}
+		.search-results {
+			width: 80%;
+		}
+		.searchresults {
+			padding-left: 0;
+			list-style-type: none;
+			.searchresult-item {
+				margin-left: 0;
+				h2 {
+					font-size: 1em;
+					padding-bottom: 0;
+					margin-bottom: 4px;
+					a {
+					}
+				}
+			}
+		}
+	}
+
+	.title-row .page-description {
+		font-size: 14pt;
+	}
+
+	a:after {
+		font-size: 0.8em;
+	}
+}

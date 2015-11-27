@@ -1,0 +1,219 @@
+@media print {
+  /* line 2, ../scss/print.scss */
+  html {
+    margin: 15px;
+  }
+
+  /* line 5, ../scss/print.scss */
+  .navbar {
+    background-color: #fff;
+    border: none;
+    display: block !important;
+    height: auto;
+  }
+  /* line 11, ../scss/print.scss */
+  .navbar .container .headerItem {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+  }
+  /* line 15, ../scss/print.scss */
+  .navbar .container .headerItem .logo, .navbar .container .headerItem .mobile-search, .navbar .container .headerItem .search {
+    display: none;
+  }
+  /* line 18, ../scss/print.scss */
+  .navbar .container .headerItem .print-logo {
+    display: block !important;
+  }
+  /* line 22, ../scss/print.scss */
+  .navbar .container .header-search {
+    display: none;
+  }
+
+  /* line 27, ../scss/print.scss */
+  .banner-link {
+    display: none;
+  }
+
+  /* line 30, ../scss/print.scss */
+  body {
+    font-size: 0.7em;
+  }
+  /* line 32, ../scss/print.scss */
+  body p, body li {
+    font-size: 12pt;
+  }
+  /* line 35, ../scss/print.scss */
+  body a {
+    color: black !important;
+    word-wrap: break-word;
+  }
+  /* line 38, ../scss/print.scss */
+  body a:visited {
+    color: black !important;
+  }
+  /* line 41, ../scss/print.scss */
+  body a.external:visited {
+    color: black !important;
+  }
+  /* line 45, ../scss/print.scss */
+  body h1 {
+    font-size: 36px;
+  }
+  /* line 47, ../scss/print.scss */
+  body h1.feature-text {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  /* line 53, ../scss/print.scss */
+  body table thead {
+    background-color: #ebebeb !important;
+  }
+  /* line 57, ../scss/print.scss */
+  body table tbody tr {
+    border-top: 1px solid #ababab;
+  }
+  /* line 61, ../scss/print.scss */
+  body table td, body table th {
+    padding: 12px;
+  }
+  /* line 65, ../scss/print.scss */
+  body .noscript {
+    display: none;
+  }
+  /* line 68, ../scss/print.scss */
+  body .related-links {
+    display: none;
+  }
+  /* line 72, ../scss/print.scss */
+  body .mobile-book-nav {
+    display: none;
+  }
+  /* line 76, ../scss/print.scss */
+  body .summary h2 {
+    font-size: 16pt;
+  }
+  /* line 80, ../scss/print.scss */
+  body h3 {
+    font-size: 12pt;
+  }
+  /* line 83, ../scss/print.scss */
+  body h4 {
+    font-size: 12pt;
+    font-style: italic;
+  }
+  /* line 88, ../scss/print.scss */
+  body .page-content a.internal-link:after, body .content a.internal-link:after {
+    content: " (https://www.govt.nz" attr(href) ")" !important;
+  }
+  /* line 91, ../scss/print.scss */
+  body .page-content a.internal-link-slash:after, body .content a.internal-link-slash:after {
+    content: " (https://www.govt.nz/" attr(href) ")" !important;
+  }
+  /* line 94, ../scss/print.scss */
+  body .page-content a span.fa-stack, body .page-content button.image-hover-prompt, body .content a span.fa-stack, body .content button.image-hover-prompt {
+    display: none;
+  }
+  /* line 98, ../scss/print.scss */
+  body .page-content .title-row h2, body .content .title-row h2 {
+    margin-top: 0;
+  }
+  /* line 102, ../scss/print.scss */
+  body .page-content .multi-page-nav, body .content .multi-page-nav {
+    display: none;
+  }
+  /* line 105, ../scss/print.scss */
+  body .page-content .social, body .content .social {
+    display: none;
+  }
+  /* line 109, ../scss/print.scss */
+  body .page-content .promos div.col-md-6, body .content .promos div.col-md-6 {
+    max-width: 49%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 115, ../scss/print.scss */
+  body .page-content .page-description, body .content .page-description {
+    margin-bottom: 12px;
+  }
+  /* line 121, ../scss/print.scss */
+  body .book-lower-nav .nav-wrapper {
+    display: none;
+  }
+  /* line 125, ../scss/print.scss */
+  body .tota11y.tota11y-toolbar {
+    display: none;
+  }
+
+  /* line 129, ../scss/print.scss */
+  .footer {
+    display: block;
+    font-size: 0.7em;
+    padding-top: 40px;
+  }
+  /* line 133, ../scss/print.scss */
+  .footer .col-md-4, .footer img {
+    display: none;
+  }
+  /* line 137, ../scss/print.scss */
+  .footer .footer-icons img.print {
+    display: block !important;
+    visibility: visible !important;
+  }
+  /* line 141, ../scss/print.scss */
+  .footer .footer-icons a:after {
+    content: '';
+  }
+  /* line 145, ../scss/print.scss */
+  .footer .copyright-icons {
+    display: none;
+  }
+
+  /* line 152, ../scss/print.scss */
+  form textarea, form input, form select {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  /* line 156, ../scss/print.scss */
+  form input.action {
+    width: initial;
+  }
+  /* line 160, ../scss/print.scss */
+  form .field span {
+    font-weight: 500;
+  }
+
+  /* line 168, ../scss/print.scss */
+  .search-page .search-form, .search-page .pagination {
+    display: none;
+  }
+  /* line 171, ../scss/print.scss */
+  .search-page .search-results {
+    width: 80%;
+  }
+  /* line 174, ../scss/print.scss */
+  .search-page .searchresults {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  /* line 177, ../scss/print.scss */
+  .search-page .searchresults .searchresult-item {
+    margin-left: 0;
+  }
+  /* line 179, ../scss/print.scss */
+  .search-page .searchresults .searchresult-item h2 {
+    font-size: 1em;
+    padding-bottom: 0;
+    margin-bottom: 4px;
+  }
+
+  /* line 190, ../scss/print.scss */
+  .title-row .page-description {
+    font-size: 14pt;
+  }
+
+  /* line 194, ../scss/print.scss */
+  a:after {
+    font-size: 0.8em;
+  }
+}

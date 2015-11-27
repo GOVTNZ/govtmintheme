@@ -1,0 +1,90 @@
+/* rules for SearchResults */
+
+.search-page {
+
+	.search-title {
+		padding-bottom: 0;
+	}
+
+	.search-form {
+		padding-bottom: 20px;
+		margin-top: 30px;
+
+		#search-form2 {
+			.search-bar {
+				padding: 0;
+				height: 40px;
+				display: inline;
+
+				#searchterm2 {
+					height: 40px;
+					background-color: $dove;
+					border: 0;
+					padding: 10px 10px 10px 10px;
+					color: $black;
+					display: inline;
+					padding-right: 110px;
+					&:focus {
+						+ .search-label {
+							left: -9999px;
+						}
+					}
+				}
+				.search-label {
+					position: absolute;
+					left: 25px;
+					top: 10px;
+					font-size: 15px;
+					font-family: Fira, Helvetica, Arial, sans-serif;
+				}
+				.search-label.entered {
+					left: -9999px;
+				}
+
+
+				.searchresults-submit {
+					width: 100px;
+					right: 15px;
+					top: 0;
+					float: right;
+					position: absolute;
+				}
+			}
+		}
+
+
+	}
+
+	/* rules for SearchResultItem */
+	.search-results {
+		padding-bottom: 20px;
+
+		ul.searchresults {
+			padding-left: 0;
+
+			.inline-details {
+				margin-bottom: 10px;
+				margin-top: -10px;
+			}
+
+			.searchresult-item {
+				list-style-type: none;
+				margin: 0;
+				padding-bottom: 5px;
+				h2 {
+					color: $blue;
+					font-size: 1em;
+					padding: 0;
+					a:hover {
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+
+	/* rules for Pagination */
+	.search-pagination {
+		clear: left;
+	}
+}

@@ -1,0 +1,96 @@
+// ----------------------------------------------------------------------------
+// Base table classes which can be included on their own or used to modify the composite classes below
+// ----------------------------------------------------------------------------
+
+.table-border-all {
+	border-left: 1px solid #ababab;
+	border-top: 1px solid #ababab;
+	td, th {
+		border-right: 1px solid #ababab;
+		border-bottom: 1px solid #ababab;
+	}
+}
+
+.table-border-rows {
+	tbody {
+		tr {
+			border-top: 1px solid $lightgrey;
+			&:first-child {
+				border-top: none;
+			}
+		}
+	}
+}
+
+.table-fullwidth {
+	width: 100%;
+}
+
+.table-pad-large {
+	td, th {
+		padding: 12px;
+	}
+}
+
+.table-pad-medium {
+	td, th {
+		padding: 4px 8px;
+	}
+}
+
+.table-pad-small {
+	td, th {
+		background-color: $white;
+		padding: 2px 4px;
+	}
+}
+
+.table-striped {
+	tbody tr:nth-child(odd) {
+		background-color: #efefef;
+	}
+}
+
+// ----------------------------------------------------------------------------
+// Composite table classes, mostly comprised of the above base classes
+// ----------------------------------------------------------------------------
+
+.table-std {
+	@extend .table-border-rows, .table-fullwidth, .table-pad-large;
+	font-size: 16px;
+	margin-bottom: 32px;
+	td,
+	th {
+		vertical-align: top;
+	}
+	th {
+		font-family: Fira-Bold, Helvetica, Arial, sans-serif;
+		font-weight: normal;
+	}
+	thead {
+		background-color: $dove;
+		th {
+			vertical-align: bottom;
+		}
+	}
+	tfoot {
+		border-top: 1px solid $lightgrey;
+		font-style: italic;
+		tr th {
+			font-family: Fira, Helvetica, Arial, sans-serif;
+			font-weight: normal;
+		}
+	}
+}
+
+// ----------------------------------------------------------------------------
+// Styling for individual cells
+// ----------------------------------------------------------------------------
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}

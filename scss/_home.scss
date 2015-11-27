@@ -1,0 +1,26 @@
+/* Info Section - partially overridden on footer) */
+
+.info-section a {
+	color: $black;
+	&:visited {
+		color: $black !important;
+		&:hover {
+			color: $orange !important;
+			text-decoration: none;
+		}
+	}
+	&.flying-focus_target:focus {
+		box-shadow: none
+	}
+}
+
+.home-content {
+	.info-section {
+		@media(min-width: 992px) and (max-width: 1199px) {
+			img {
+				width: 300px;
+				height: auto;
+			}
+		}
+	}
+}

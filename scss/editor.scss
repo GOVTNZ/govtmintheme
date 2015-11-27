@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'typography';
+
+@media screen {
+	@import 'layout';
+	@import 'header';
+	@import 'typography';
+	@import 'footer';
+	@import 'home';
+	@import 'searchresults';
+	@import 'breadcrumbs';
+}
+
+html {
+	background-color: $white;
+	body {
+		background-color: $white;
+	}
+}
+
+body {
+	a {
+		color: $blue;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	&.mceContentBody {
+		background-color: $white;
+		a.ss-broken {
+			background-color: inherit;
+			border: none;
+			color: inherit;
+			padding: inherit;
+			text-decoration: none;
+		}
+	}
+}

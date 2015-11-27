@@ -1,0 +1,5 @@
+[
+	"framework/thirdparty/jquery/jquery.js",
+	"mysite/javascript/govtnz-theme.js",
+	"rules-reduction/javascript/rules-reduction.js"
+]

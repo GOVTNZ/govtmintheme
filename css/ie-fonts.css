@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Fira';
+	src: url("../fonts/FiraSans-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Fira-Bold';
+	src: url("../fonts/FiraSans-Bold.woff") format("woff");
+}
+
+/* Book Page h1 fix */
+.pagetype-multiprocessbook .title-row,
+.pagetype-multiprocess .title-row,
+.pagetype-multiinfobook .title-row,
+.pagetype-multiinfo .title-row {
+	padding-top: 8px;
+}

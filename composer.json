@@ -1,0 +1,29 @@
+{
+	"name": "govtnz/dia-theme",
+	"description": "Govt.nz Silverstripe SilverStripe 3.1",
+	"type": "silverstripe-theme",
+	"keywords": [
+		"silverstripe",
+		"theme"
+	],
+	"authors": [
+		{
+			"name": "Josh Kosmala (NovaWeb)",
+			"homepage": "http://www.novaweb.co.nz"
+		},
+		{
+			"name": "Leigh Harrison (ElseApps)",
+			"homepage": "http://www.elseapps.com"
+		},
+		{
+			"name": "Julian Thomson"
+		},
+		{
+			"name": "Mark Stephens"
+		}
+	],
+	"require": {
+		"composer/installers": "*",
+		"silverstripe/framework": ">=3.1"
+	}
+}

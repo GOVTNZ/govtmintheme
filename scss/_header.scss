@@ -1,0 +1,134 @@
+.navbar {
+	margin-bottom: 0;
+  border-radius: 0;
+	&.navbar-inverse {
+		background-color: $jetblack;
+		border-color: $jetblack;
+		background-image: none;
+	}
+}
+
+.header {
+	background-color: $jetblack;
+	height: 90px;
+	.headerItem {
+		padding: 5px 0 0 0;
+		.logo {
+			background-image: url('../images/page-logo.png');
+			background-repeat: no-repeat;
+			margin-top: 13px;
+			margin-left: 15px;
+			padding-top: 0;
+			height: 48px;
+			width: 293px;
+			a {
+				display: block;
+				margin-left: -15px;
+				height: 48px;
+				width: 293px;
+			}
+		}
+		.btn {
+			padding-top: 5px;
+			height: 34px;
+		}
+		.mobile-search {
+			display: none;
+		}
+	}
+	.header-search-form {
+		.search-controls {
+			margin-top: -5px;
+		}
+		#search-form {
+			.search-label {
+				position: absolute;
+				left: 0;
+				font-size: 15px;
+				padding-top: 10px;
+				padding-left: 10px;
+				font-family: Fira, Helvetica, Arial, sans-serif;
+			}
+			#searchterm:focus{
+				box-shadow: 0 0 0 2px #78aeda, 0 0 1px #78aeda inset !important;
+				border-radius: 2px;
+			}
+			#searchterm:focus, #searchterm.entered {
+				+ .search-label {
+					left: -9999px;
+				}
+			}
+			.search-label.entered {
+				left: -9999px;
+			}
+		}
+	}
+}
+
+.home-header {
+	height: 185px;
+	.headerItem {
+		padding: 40px 0 0 0;
+		.logo {
+			background-image: url('../images/logo.png');
+			background-repeat: no-repeat;
+			margin-left: 15px;
+			height: 79px;
+			width: 393px;
+			a {
+				display: block;
+				margin-left: -15px;
+				height: 79px;
+				width: 393px;
+			}
+		}
+	}
+	.header-search-form {
+		.search-controls {
+			margin-top: 0px;
+		}
+	}
+}
+
+.header-search {
+	margin: 18px 0 0 0;
+	position: relative;
+	#search-form .btn {
+		margin: 0 0 0 -4px;
+	}
+	.header-search-form {
+		position: absolute;
+		right: 0;
+		top: -55px;
+		&.home-page {
+			top: -85px;
+		}
+		.search-controls {
+			.form-control {
+				width: 300px;
+				border: 0;
+				height: 40px;
+				margin-right: -5px;
+			}
+			.glyphicon {
+				left: 2px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header-search-form {
+		#searchterm {
+
+			+ .search-label {
+				top: 10px;
+			}
+			&:focus {
+				+ .search-label {
+					left: -9999px;
+				}
+			}
+		}
+	}
+}

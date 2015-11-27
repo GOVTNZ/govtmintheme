@@ -1,0 +1,309 @@
+/* Main Layout Top to Bottom */
+* {
+
+}
+
+html {
+	background: $grey;
+}
+
+body {
+
+	.border-top {
+		border-top: 1px solid $black;
+	}
+}
+
+.container {
+	padding: 0 15px 0 15px;
+	.title-row {
+		margin-bottom: 36px;
+	}
+	@media (min-width: 768px) {
+		padding: 0;
+	}
+	&.page-content {
+		margin-top: 56px;
+		div.summary {
+			margin-top: 0px;
+		}
+		section {
+			border-top: solid $black 1px;
+			h2 {
+				padding-top: 14px !important;
+				margin-top: 0;
+			}
+		}
+		.video-container {
+			iframe {
+				width: 100%;
+			}
+		}
+	}
+	.logo-text {
+		position: absolute;
+		left: -9999px;
+	}
+	.print-logo {
+		display: none;
+	}
+	div.main-content, .org-summary {
+		h2:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.content {
+	background: $white;
+	min-height: 500px;
+	padding: 0px 0 60px 0;
+	&.home-content {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+	/* Banner & Breadcrumbs*/
+	.banner-link {
+		height: auto;
+		background: $dove;
+		&.breadcrumbs {
+			height: auto;
+		}
+		p {
+			font-size: 0.889em;
+			padding: 5px;
+			margin-bottom: 0px;
+		}
+	}
+
+	ul.document-list {
+		list-style-type: none;
+		padding-left: 0;
+		font-size: 16px;
+		li {
+			margin-left: 0;
+			a i.fa-file-o {
+				&.gif:before,
+				&.png:before,
+				&.jpg:before,
+				&.jpeg:before,
+				&.bmp:before, {
+					content: "\f1c5";
+				}
+				&.pdf:before {
+					content: "\f1c1";
+				}
+				&.doc:before,
+				&.docx:before {
+					content: "\f1c2";
+				}
+				&.xls:before,
+				&.xlsx:before {
+					content: "\f1c3";
+				}
+				&.zip:before,
+				&.\7z:before,
+				&.rar:before {
+					content: "\f1c6";
+				}
+			}
+		}
+	}
+}
+
+/* Misc */
+.square-corners {
+	border-radius: 0px;
+}
+
+ul.pagination {
+	li {
+		a {
+			color: $blue;
+			font-size: 18px;
+		}
+		&.active {
+			span {
+				background-color: $blue;
+				color: $white;
+			}
+		}
+	}
+}
+
+.glyphicon {
+	top: 2px;
+	padding: 0 5px 0 0;
+}
+
+.relative {
+	position: relative;
+}
+
+a i.fa-file-o {
+	&.gif:before,
+	&.png:before,
+	&.jpg:before,
+	&.jpeg:before,
+	&.bmp:before, {
+		content: "\f1c5";
+	}
+	&.pdf:before {
+		content: "\f1c1";
+	}
+	&.doc:before,
+	&.docx:before {
+		content: "\f1c2";
+	}
+	&.xls:before,
+	&.xlsx:before {
+		content: "\f1c3";
+	}
+	&.zip:before,
+	&.\7z:before,
+	&.rar:before {
+		content: "\f1c6";
+	}
+}
+
+.col-md-5ths {
+	position: relative;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+@media (min-width: 992px) {
+	.col-md-5ths {
+		width: 20%;
+		float: left;
+	}
+}
+
+/* Right sidebar */
+.section {
+	margin-top: 24px;
+	h3 {
+		margin: 14px 0 18px 0;
+	}
+	&.right-section {
+		margin-top: 0;
+	}
+}
+
+.lower-links {
+	margin-top: 48px;
+}
+aside.lower-links {
+	margin-top: 48px;
+}
+.lower-links {
+
+	.responsible-agencies, .related-pages {
+		margin-top: 12px;
+		margin-bottom: 36px;
+		h2 {
+			padding-top: 0!important;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.section.right-section {
+		margin-top: 24px;
+	}
+	.dt-border-only {
+		border: none !important;
+	}
+
+	div.title-row {
+		h2.parent {
+			padding-top: 0;
+		}
+	}
+	.lower-links {
+		margin-top: 48px;
+		.social {
+			h2 {
+				padding-top: 10px;
+			}
+		}
+		.social {
+			margin-bottom: 36px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.lower-links {
+		margin-top: 48px;
+	}
+}
+
+// Details/Summary toggle
+
+details {
+	summary[aria-expanded="false"] + .details-toggle {
+		display: none !important;
+	}
+
+	summary {
+		color: $blue;
+		cursor: pointer;
+		margin-bottom: 10px;
+		h2 {
+			display: inline;
+			font-family: Fira, Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			font-weight: normal;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+		legend {
+			color: $blue;
+			display: inline;
+		}
+	}
+
+	// Remove the default webkit icons: font-awesome alternatives are added below
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
+	// Add icons for non-webkit browsers
+	&.no-details {
+		summary[aria-expanded="false"]:before {
+			// content: "►\00a0";
+			content: "\f054\00a0\00a0\00a0";
+			font-family: FontAwesome;
+			color: $blue;
+			// padding-right: 0.5em; Better to pad with spaces, so the underline isn't broken
+		}
+		summary[aria-expanded="true"]:before {
+			//content: "▼\00a0";
+			content: "\f078\00a0\00a0";
+			font-family: FontAwesome;
+			color: $blue;
+			// padding-right:0.5em; Better to pad with spaces, so the underline isn't broken
+		}
+	}
+	// Add icons for web-kit browsers
+	&:not(.no-details) {
+		summary:before {
+			content: "\f054\00a0\00a0\00a0";
+			font-family: FontAwesome;
+			color: $blue;
+		}
+	}
+}
+
+details[open] summary:before {
+	content: "\f078\00a0\00a0";
+	font-family: FontAwesome;
+	color: $blue;
+}
+
+.topmargin64 {
+	margin-top: 56px;
+}

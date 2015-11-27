@@ -1,0 +1,87 @@
+.footer {
+  color: $white;
+  background-color: $grey;
+
+  h3 {
+    font-family: 'Fira-Bold';
+    color: $white;
+    font-size: 0.95em;
+    margin-top: 5px;
+  }
+  .fa {
+    padding-right: 8px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 5px 0;
+      a:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+  .to-top-link {
+    padding: 40px 0 0 0;
+    float: right;
+    a {
+      color: $white;
+      &:visited {
+        color: $white !important;
+      }
+    }
+  }
+  /* Override info-section behaviour present on Homepage.scss */
+  .info-section {
+    border-top: 1px $white solid;
+    &:hover {
+      border-top: 1px $white solid;
+    }
+    margin-top: 40px;
+    h3 {
+      margin-top: 0;
+      padding-top: 0.82em;
+      border: none;
+    }
+    a {
+      color: $white;
+      &:visited {
+        color: $white !important;
+      }
+    }
+    ul {
+      li {
+        margin-left: 0;
+        a {
+          &:hover {
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
+  .footer-push {
+    border-top: 1px solid $white;
+    margin: 40px 0 0 0;
+    padding: 20px 0 40px 0;
+    p {
+      font-size: 0.8em;
+    }
+    .col-md-3 {
+      padding: 0;
+      p.copyright {
+        padding: 20px 0 0 0;
+      }
+    }
+    .col-md-1 {
+      padding: 0;
+    }
+    p.licence a {
+      color: $white !important;
+    }
+  }
+  img {
+    color: #fff;
+  }
+}

@@ -1,0 +1,272 @@
+/* General */
+@font-face {
+	font-family: 'Fira';
+	src: url('../fonts/FiraSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Fira-Bold';
+	src: url('../fonts/FiraSans-Bold.ttf');
+}
+
+html, body {
+	font-family: 'Fira', 'Helvetica', 'Arial', sans-serif;
+	font-size: 18px;
+	color: $black;
+}
+
+/* Headings */
+h1, h2, h3 {
+	font-family: 'Fira-Bold', 'Helvetica', 'Arial', sans-serif;;
+}
+
+h4, h5, h6 {
+	font-family: 'Fira', 'Helvetica', 'Arial', sans-serif;;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	border: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 36px;
+	margin-bottom: 16px;
+	font-size: 1.33em;
+}
+
+h3 {
+	font-size: 1em;
+	padding: 0;
+	margin: 2em 0 1em 0;
+}
+
+h4 {
+	font-size: 1em;
+	margin-top: 22px;
+	font-style: italic;
+	font-weight: normal !important;
+}
+
+h5 {
+	font-size: 0.9em;
+}
+
+h6 {
+	font-size: 0.8em;
+}
+
+h1.feature-text {
+	font-size: 2em;
+	font-family: 'Fira', 'Helvetica', 'Arial', sans-serif;
+	padding: 40px 0 0 0;
+	margin-top: 20px;
+	width: 450px;
+}
+
+.inline-details {
+	font-family: 'Fira';
+	color: $grey;
+	font-size: 0.78em;
+}
+
+p.page-description {
+	font-family: 'Fira', 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.33em;
+	padding: 0;
+	margin: 0;
+	margin-top: 36px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+/* Links */
+a {
+	color: $blue;
+	&:visited {
+		color: $blue-visited !important;
+	}
+}
+
+a.external {
+	color: $orange;
+	.external-text {
+		font-size: 1px;
+		display: inline-block;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		width: 0;
+		font-size: 1px;
+	}
+	&:visited {
+		color: $orange-visited !important;
+	}
+}
+
+/* Lists */
+ul, ol {
+	padding-left: 20px;
+	margin-bottom: 20px;
+	li {
+		margin-left: 18px;
+		margin-bottom: 10px;
+	}
+	ul, ol {
+		margin-top: 10px;
+		margin-bottom: 12px;
+		li {
+			padding: 0;
+			margin-bottom: 6px;
+		}
+	}
+}
+
+.links-list {
+	padding: 0;
+	margin: 0;
+	li {
+		padding: 0.5em 0;
+		margin: 0;
+		list-style: none;
+		a {
+			color: $blue;
+		}
+		a:hover {
+			color: $blue;
+			text-decoration: underline;
+		}
+	}
+}
+
+/* Buttons */
+.btn {
+	height: 40px;
+	padding-top: 10px;
+}
+
+.btn-blue {
+	background-color: $blue;
+	border-radius: 0;
+	color: $white;
+	padding: 2px 20px 2px 20px;
+	&:hover, &:focus {
+		background-color: darken($blue, 10%);
+		color: $white;
+	}
+}
+
+.btn-orange {
+	background-color: $orange;
+	&:hover {
+		background-color: darken($orange, 10%);
+		color: $white;
+	}
+}
+
+.btn-black {
+	background-color: $jetblack;
+	color: $white;
+	&:hover, &:focus {
+		color: $orange;
+	}
+}
+
+.btn-orange:hover {
+	background-color: darken($orange, 10%);
+	color: $white;
+}
+
+/* In content styling */
+.inline-details {
+	font-family: 'Fira';
+	color: $grey;
+	font-size: 0.78em;
+}
+
+.callout-note, .callout-alert {
+	a {
+		color: $dark-orange;
+	}
+}
+
+.callout-alert {
+	background-color: $dove;
+	border-left: 10px solid $orange;
+	font-weight: bold;
+	margin: 1em 0 1.5em;
+	padding: 1.5em 1.25em 1em;
+	&.noscript {
+		max-width: 1170px;
+		margin: 25px 15px 0px 15px;
+
+	}
+}
+
+.callout-note {
+	background-color: $dove;
+	margin: 1em 0 1.5em;
+	padding: 1.5em 1.25em 1em;
+	h2, h3 {
+		border-top: none;
+		margin-top: 0;
+		padding: 0 0 6px 0;
+	}
+}
+
+blockquote {
+	h3 {
+		margin: 0;
+		padding: 0 0 6px 0;
+	}
+
+}
+
+.callout-warning {
+	background-color: $dove;
+	border-left: 10px solid $blue;
+	margin: 1em 0 1.5em;
+	padding: 1.5em 1.25em 1em;
+	h3 {
+		margin: 0;
+		padding: 0 0 6px 0;
+	}
+}
+
+/* RSS */
+.content {
+	.fa-rss {
+		span {
+			font-family: 'Fira';
+		}
+	}
+}
+
+/* White links on Homepage/Footer */
+.info-section .white-link, .info-section .white-link:hover {
+	color: $white;
+	&:visited {
+		color: $white !important;
+	}
+}
+
+/* Conditional to allow IE10+ specific CSS here */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold !important;
+	}
+	.person-name span {
+		font-family: 'Fira', 'Helvetica', 'Arial', sans-serif !important;
+		font-weight: bold;
+	}
+}

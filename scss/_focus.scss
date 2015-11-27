@@ -1,0 +1,58 @@
+body {
+
+	a, button, .btn, input {
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 2px #78aeda, 0 0 1px #78aeda inset;
+			border-radius: 2px;
+		}
+	}
+	input, textarea {
+		&:focus {
+			outline: none !important;
+			box-shadow: 0 0 0 2px #78aeda, 0 0 1px #78aeda inset !important;
+			&.flying-focus_target {
+				box-shadow: none !important;
+			}
+		}
+	}
+	button {
+		&.action:focus, &.btn:focus {
+			outline: none;
+		}
+	}
+
+	.info-section a {
+		&:focus {
+			box-shadow: none;
+			.inner {
+				outline: none;
+				box-shadow: 0 0 0 2px #78aeda, 0 0 1px #78aeda inset;
+				border-radius: 2px;
+			}
+		}
+	}
+
+	/* Footer */
+	.footer {
+		a:focus {
+			box-shadow: 0 0 0 2px #78aeda, 0 0 1px #78aeda inset;
+			border-radius: 2px;
+		}
+	}
+
+	a:active,
+	a.selected,
+	button:active,
+	button.selected,
+	.btn:active,
+	.btn.selected,
+	details summary:active,
+	details summary.selected,
+	.info-section a:active .inner,
+	.info-section a.selected .inner,
+	input:active,
+	input.selected {
+		box-shadow: none !important;
+	}
+}

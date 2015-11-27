@@ -1,0 +1,150 @@
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold !important;
+}
+
+/* Forms stuff */
+.required {
+	background-color: #EBEBEB;
+	border-left: 10px solid #d34322;
+	margin: 20px 0 1.5em;
+	margin-top: -18px !important;
+	padding: 1.5em 1.25em 1em;
+}
+
+/* End forms */
+
+#Form_InlineFeedbackForm fieldset {
+	padding-top: 12px !important;
+}
+
+#Form_InlineFeedbackForm fieldset legend {
+	padding: 0 0 16px !important;
+	font-weight: bold;
+}
+
+/* Accordions */
+.accordion-item {
+	/*padding: 0.25em 0;*/
+}
+
+.accordion-item h2 {
+	font-size: 1em;
+	line-height: 3em;
+}
+
+.accordion-item h2 .accordion-close {
+	filter: alpha(opacity=40);
+	font-size: 1.8em;
+	height: 1.4em;
+}
+
+.accordion-item h2:hover .accordion-close, .accordion-close:hover {
+	filter: alpha(opacity=100) !important;
+}
+
+.accordion-item h2 .accordion-number {
+	font-size: 1.8em;
+	width: 2em;
+}
+
+.accordion-item h2 .accordion-open {
+	filter: alpha(opacity=40);
+	font-size: 1.8em;
+	height: 1.4em;
+}
+
+.accordion-item h2:hover .accordion-open, .accordion-open:hover {
+	filter: alpha(opacity=100) !important;
+}
+
+.accordion-item h2 span.accordion-number {
+	font-size: 1.8em;
+}
+
+/* BookPages lower Nav */
+
+.pagetype-multiinfobook .book-lower-nav .begin-link .nav-wrapper,
+.pagetype-multiprocessbook .book-lower-nav .begin-link .nav-wrapper,
+.pagetype-multiinfo .book-lower-nav .next-link .nav-wrapper,
+.pagetype-multiprocess .book-lower-nav .next-link .nav-wrapper {
+	padding-right: 20px;
+}
+
+.pagetype-multiinfobook .book-lower-nav .begin-link,
+.pagetype-multiprocessbook .book-lower-nav .begin-link,
+.pagetype-multiinfo .book-lower-nav .next-link,
+.pagetype-multiprocess .book-lower-nav .next-link {
+	margin-right: 15px;
+	padding-right: 15px;
+	padding-left: 30px;
+	position: relative;
+}
+
+.pagetype-multiinfobook .book-lower-nav .begin-link .icon-next,
+.pagetype-multiprocessbook .book-lower-nav .begin-link .icon-next,
+.pagetype-multiinfo .book-lower-nav .next-link .icon-next,
+.pagetype-multiprocess .book-lower-nav .next-link .icon-next {
+	position: absolute;
+	right: 15px;
+	top: -15px;
+	font-size: 66px;
+}
+
+.pagetype-multiinfo .book-lower-nav .prev-link .nav-wrapper,
+.pagetype-multiprocess .book-lower-nav .prev-link .nav-wrapper,
+.pagetype-multiinfo .book-lower-nav .last-page .nav-wrapper,
+.pagetype-multiprocess .book-lower-nav .last-page .nav-wrapper {
+	padding-left: 15px;
+}
+
+.pagetype-multiinfo .book-lower-nav .prev-link .nav-wrapper .nav-text,
+.pagetype-multiprocess .book-lower-nav .prev-link .nav-wrapper .nav-text,
+.pagetype-multiinfo .book-lower-nav .last-page .nav-wrapper .nav-text,
+.pagetype-multiprocess .book-lower-nav .last-page .nav-wrapper .nav-text {
+	padding-left: 20px;
+}
+
+.pagetype-multiinfo .book-lower-nav .prev-link .nav-wrapper .icon-prev i,
+.pagetype-multiprocess .book-lower-nav .prev-link .nav-wrapper .icon-prev i {
+	position: absolute;
+	left: 0px;
+	top: -15px;
+	font-size: 66px;
+}
+
+@media (max-width: 767px) {
+	.pagetype-multiinfobook .book-lower-nav .begin-link,
+	.pagetype-multiprocessbook .book-lower-nav .begin-link,
+	.pagetype-multiinfo .book-lower-nav .next-link,
+	.pagetype-multiprocess .book-lower-nav .next-link {
+		margin-left: -25px;
+		padding-right: 45px;
+		padding-left: 0px;
+		left: -15px;
+		display: block;
+	}
+
+	.pagetype-multiinfobook .book-lower-nav .begin-link .icon-next,
+	.pagetype-multiprocessbook .book-lower-nav .begin-link .icon-next,
+	.pagetype-multiinfo .book-lower-nav .next-link .icon-next,
+	.pagetype-multiprocess .book-lower-nav .next-link .icon-next {
+		top: 0;
+	}
+}
+
+/* Focus */
+html body a:focus,
+html body button:focus,
+html body button.action:focus,
+html body button.btn:focus,
+html body .btn:focus,
+html body .info-section a:focus .inner,
+html body .flag-gallery a.social-share:focus .item-type,
+html body .inline-feedback-container summary:focus {
+	outline: #78aeda solid medium;
+}
+
+html body input:focus,
+html body textarea:focus {
+    outline: #78aeda solid medium !important;
+}
