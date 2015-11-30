@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="headerItem row">
 			<div class="col-lg-8 col-xs-7 print-logo">
-				<img src="/themes/dia-theme/images/print-logo.png" alt="New Zealand Government"/>
+				<img src="/themes/govtmin/images/print-logo.png" alt="New Zealand Government"/>
 			</div>
 			<div class="col-lg-8 col-xs-7 logo">
 				<a href="$HomePageLink"

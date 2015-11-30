@@ -111,7 +111,7 @@ ul, ol {
 	.headerItem {
 		padding: 10px 0 0 0 !important;
 		.logo {
-			background-image: url('/themes/dia-theme/images/mobile-logo.png');
+			background-image: url('/themes/govtmin/images/mobile-logo.png');
 			background-repeat: no-repeat;
 			background-position: center;
 			margin-top: 0;
@@ -234,21 +234,6 @@ ul.pagination li a {
 	}
 }
 
-.feature-image {
-	background-color: $dove;
-	margin-bottom: 10px;
-	.feature-text {
-		font-family: 'Fira-Bold';
-		font-size: 1.125em;
-		width: auto;
-		line-height: 1.33em;
-		color: $orange;
-		padding-bottom: 20px;
-		padding-top: 20px;
-		margin-top: 15px;
-		margin-bottom: 10px;
-	}
-}
 
 /* Resizes */
 h2 {

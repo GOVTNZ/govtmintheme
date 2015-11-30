@@ -1609,7 +1609,7 @@ blockquote h3 {
   }
   /* line 113, ../scss/_mobile.scss */
   .header .headerItem .logo {
-    background-image: url("/themes/dia-theme/images/mobile-logo.png");
+    background-image: url("/themes/govtmin/images/mobile-logo.png");
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 0;

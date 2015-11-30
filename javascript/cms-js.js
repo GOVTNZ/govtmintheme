@@ -50,7 +50,7 @@ var fieldName = null;
     // Send the content of the tinyMCE editor to the custom controller
     $('body').on('click', '#ajax-content-save', function (e) {
 
-        $('#ajax-save-wrap').append('<img id="ajax-waiting" style="vertical-align: middle;" src="themes/dia-theme/images/waiting.gif">');
+        $('#ajax-save-wrap').append('<img id="ajax-waiting" style="vertical-align: middle;" src="themes/govtmin/images/waiting.gif">');
 
         var pageID = document.getElementById("Form_EditForm_ID").value;
         var content = tinyMCE.get("mce_fullscreen").getContent(); // get the content

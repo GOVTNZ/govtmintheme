@@ -2,8 +2,8 @@ var div = document.createElement("div");
 div.innerHTML = "<!--[if lt IE 9]><i></i><![endif]-->";
 if (isIeLessThan9 = (div.getElementsByTagName("i").length == 1)) {
 	var src = [
-		'themes/dia-theme/javascript/html5shiv.min.js',
-		'themes/dia-theme/javascript/respond.min.js'
+		'themes/govtmin/javascript/html5shiv.min.js',
+		'themes/govtmin/javascript/respond.min.js'
 	];
 	for (var ipos = 0; ipos < src.length; ipos++) {
 		var head = document.getElementsByTagName('head')[0];
