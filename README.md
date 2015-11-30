@@ -1,5 +1,7 @@
 #How to use
 
+Place these files into a folder in the theme directory (*your-site/themes/govtmin/*)
+
 **Page.php**
 
 Add the following to the *Page_Controller*
